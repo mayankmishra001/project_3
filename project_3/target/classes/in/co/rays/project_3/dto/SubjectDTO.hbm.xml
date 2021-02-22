@@ -1,35 +1,27 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 23 jan, 2021 11:49:54 AM by Hibernate Tools 3.5.0.Final -->
-
+<!-- Generated 17 Nov, 2019 12:26:32 PM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping package="in.co.rays.project_3.dto">
-	<class name="StudentDTO" table="ST_STUDENT">
+	<class name="SubjectDTO" table="ST_SUBJECT">
 		<id name="id" type="java.lang.Long">
-			<column name="ID" ></column>
-			<generator class="increment" ></generator>
+			<column name="ID" />
+			<generator class="increment" />
 		</id>
-		
-		<property name="firstName" type="java.lang.String">
-			<column name="FIRST_NAME" />
+		<property name="subjectId" type="long">
+			<column name="SUBJECT_ID" />
 		</property>
-		<property name="lastName" type="java.lang.String">
-			<column name="LAST_NAME" />
+		<property name="courseName" type="java.lang.String">
+			<column name="COURSE_NAME" />
 		</property>
-		<property name="collegeName" type="java.lang.String">
-			<column name="COLLEGE_NAME" />
+		<property name="description" type="java.lang.String">
+			<column name="DESCRIPTION" />
 		</property>
-		<property name="dob" type="java.util.Date">
-			<column name="DOB" />
+		<property name="courseId" type="long">
+			<column name="COURSE_ID" />
 		</property>
-		<property name="collegeId" type="long">
-			<column name="COLLEGE_ID" />
-		</property>
-		<property name="emailId" type="java.lang.String">
-			<column name="EMAILID" />
-		</property>
-		<property name="mobileNo" type="java.lang.String">
-			<column name="MOBILE_NO" />
+		<property name="subjectName" type="java.lang.String">
+			<column name="SUBJECT_NAME" />
 		</property>
 		<property name="createdBy" type="java.lang.String" length="50">
 			<column name="CREATED_BY" />
@@ -44,4 +36,5 @@
 			<column name="MODIFIED_DATETIME" />
 		</property>
 	</class>
+
 </hibernate-mapping>

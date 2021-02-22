@@ -44,7 +44,7 @@ welcomeMsg += "Guest";
 %>
 <div class="header" style="background-color:#6B6B47;">
 		
-<nav class="navbar navbar-expand-lg navbar-dark "> <a
+<nav class="navbar navbar-expand-lg"> <a
 class="navbar-brand" href="<%=ORSView.WELCOME_CTL%>"><img
 src="<%=ORSView.APP_CONTEXT%>/img/custom.png" width="90px"
 height="50px"></a>
@@ -84,7 +84,7 @@ aria-expanded="false"> <font style="color: white;">User</font>
 href="<%=ORSView.MY_PROFILE_CTL%>"><i class="fas fa-user-tie"></i>My
 Profile</a> <a class="dropdown-item"
 href="<%=ORSView.CHANGE_PASSWORD_CTL%>"><i
-class=" far fa-file-alt"></i>Change Password</a>
+class=" fa fa-file-alt"></i>Change Password</a>
 </div></li>
 <%
 } else if (userDto.getRoleId() == RoleDTO.ADMIN) {

@@ -11,13 +11,13 @@ import in.co.rays.project_3.model.CollegeModelInt;
 import in.co.rays.project_3.model.CollegeModelJDBCImpl;
 
 public class CollegeModelTest {
-//public static CollegeModelInt model=new CollegeModelHibImp();
-public static CollegeModelInt model=new CollegeModelJDBCImpl();
+public static CollegeModelInt model=new CollegeModelHibImp();
+//public static CollegeModelInt model=new CollegeModelJDBCImpl();
 public static void main(String[] args) throws Exception {
 	//addTest();
 	//deleteTest();
 	//updateTest();
-	//findByPKTest();
+	findByPKTest();
 	//findByNameTest();
 	
 	
@@ -74,7 +74,7 @@ public static void deleteTest() throws ApplicationException {
 public static void addTest() throws ApplicationException, DuplicateRecordException {
 	// TODO Auto-generated method stub
 	 CollegeDTO dto = new CollegeDTO();
-     //dto.setId(1L);
+     dto.setId(19L);
      dto.setName("malwa");
      dto.setAddress("rau road");
      dto.setState("up");

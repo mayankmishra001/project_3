@@ -18,10 +18,10 @@ public class UserModelTest {
 	//public static UserModelInt model = new UserModelJDBCImpl();
 
 	public static void main(String[] args) throws Exception {
-		//addTest();
+		addTest();
 		//updateTest();
 		//deleteTest();
-		findByPKTest();
+		/* findByPKTest(); */
 		 //findByLoginTest();
 		 //listTest();
 		/* searchTest(); */
@@ -109,7 +109,7 @@ public class UserModelTest {
 		dto.setDob(sdf.parse("30-05-1995"));
 		dto.setConfirmPassword("1234");
 		dto.setPassword("1234");
-		dto.setLogin("Mayanks@gmail.com");
+		dto.setLogin("Mayankspp@gmail.com");
 		dto.setGender("male");
 		dto.setUnSuccessfullLogin(2);
 

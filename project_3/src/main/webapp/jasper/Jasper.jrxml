@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.0.4.final using JasperReports Library version 6.0.4  -->
-<!-- 2021-02-19T01:13:00 -->
+<!-- 2021-02-22T14:44:21 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Jasper" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="23827163-5ae3-4de0-b41e-a13231991010">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
 	<queryString>
@@ -50,9 +50,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch">
+		<band height="108" splitType="Stretch">
 			<staticText>
-				<reportElement x="207" y="30" width="140" height="30" forecolor="#000000" uuid="285831c1-e313-4f50-99f1-797bebad2425">
+				<reportElement x="200" y="70" width="140" height="30" forecolor="#000000" uuid="285831c1-e313-4f50-99f1-797bebad2425">
 					<property name="local_mesure_unity" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
@@ -64,36 +64,37 @@
 		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch"/>
+		<band height="65" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="444" y="17" width="100" height="30" uuid="ba4615cd-d6e0-43c6-8b93-c8309fe3afc4"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="30" splitType="Stretch">
+		<band height="60" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="81" height="30" uuid="e7d3b59b-aa84-4a38-b7fa-4b7f1bb7cb38"/>
-				<text><![CDATA[ID]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="81" y="0" width="79" height="30" uuid="af334418-6338-4548-a1f8-563dcce93d8f"/>
+				<reportElement x="0" y="30" width="239" height="30" uuid="af334418-6338-4548-a1f8-563dcce93d8f"/>
 				<text><![CDATA[ROLLNO]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="160" y="0" width="79" height="30" uuid="8c3beb80-2d1b-4611-a578-3d45dc52bf3d"/>
+				<reportElement x="89" y="30" width="229" height="30" uuid="8c3beb80-2d1b-4611-a578-3d45dc52bf3d"/>
 				<text><![CDATA[NAME]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="239" y="0" width="79" height="30" uuid="05aa7ee3-65b8-4b41-8539-f024caceabe1"/>
+				<reportElement x="168" y="30" width="229" height="30" uuid="05aa7ee3-65b8-4b41-8539-f024caceabe1"/>
 				<text><![CDATA[PHYSICS]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="318" y="0" width="79" height="30" uuid="57caf72f-597b-4be0-a24a-b7873c9e1e0a"/>
+				<reportElement x="247" y="30" width="229" height="30" uuid="57caf72f-597b-4be0-a24a-b7873c9e1e0a"/>
 				<text><![CDATA[CHEMISTRY]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="397" y="0" width="79" height="30" uuid="a94d6c50-0a88-4b42-886f-ace390585f12"/>
+				<reportElement x="347" y="30" width="208" height="30" uuid="a94d6c50-0a88-4b42-886f-ace390585f12"/>
 				<text><![CDATA[MATHS]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="476" y="0" width="79" height="30" uuid="0ad19aea-e8a2-48d8-a74c-ee9fd3ef9252"/>
+				<reportElement x="429" y="30" width="61" height="30" uuid="0ad19aea-e8a2-48d8-a74c-ee9fd3ef9252"/>
 				<text><![CDATA[Total]]></text>
 			</staticText>
 		</band>
@@ -101,31 +102,27 @@
 	<detail>
 		<band height="125" splitType="Stretch">
 			<textField>
-				<reportElement x="0" y="-10" width="81" height="40" uuid="b44d72fe-32ec-4d12-aefb-2b810627d624"/>
-				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="81" y="-10" width="79" height="40" uuid="08df5eda-f95f-4fcc-b34c-a3bf5d58ff01"/>
+				<reportElement x="0" y="20" width="79" height="40" uuid="08df5eda-f95f-4fcc-b34c-a3bf5d58ff01"/>
 				<textFieldExpression><![CDATA[$F{ROLL_NO}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="160" y="-10" width="79" height="40" uuid="703894e5-4f5f-4a9a-83a7-b4360d9edbdb"/>
+				<reportElement x="80" y="20" width="79" height="30" uuid="703894e5-4f5f-4a9a-83a7-b4360d9edbdb"/>
 				<textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="239" y="-10" width="79" height="40" uuid="bb55c149-5b24-4625-803a-91d353405d23"/>
+				<reportElement x="159" y="20" width="79" height="20" uuid="bb55c149-5b24-4625-803a-91d353405d23"/>
 				<textFieldExpression><![CDATA[$F{PHYSICS}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="318" y="-10" width="79" height="40" uuid="185449fb-14a9-41d0-87eb-a956dd9b4922"/>
+				<reportElement x="250" y="20" width="79" height="20" uuid="185449fb-14a9-41d0-87eb-a956dd9b4922"/>
 				<textFieldExpression><![CDATA[$F{CHEMISTRY}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="397" y="-10" width="79" height="40" uuid="1aba2ebf-48a5-43b8-a58c-d708c102bd24"/>
+				<reportElement x="350" y="20" width="79" height="30" uuid="1aba2ebf-48a5-43b8-a58c-d708c102bd24"/>
 				<textFieldExpression><![CDATA[$F{MATHS}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="476" y="-10" width="79" height="40" uuid="4f91ec39-4756-453f-8427-36301906ee66"/>
+				<reportElement x="430" y="20" width="79" height="20" uuid="4f91ec39-4756-453f-8427-36301906ee66"/>
 				<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
 			</textField>
 		</band>
@@ -134,7 +131,10 @@
 		<band height="45" splitType="Stretch"/>
 	</columnFooter>
 	<pageFooter>
-		<band height="54" splitType="Stretch"/>
+		<band height="25" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
 	</pageFooter>
 	<summary>
 		<band height="42" splitType="Stretch"/>
